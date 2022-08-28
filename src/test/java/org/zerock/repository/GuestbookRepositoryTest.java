@@ -91,4 +91,5 @@ public class GuestbookRepositoryTest {
         Assertions.assertEquals(save.getContent(), "test");
 
     }
+
 }
