@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.zerock.entity.Guestbook;
 
 import java.time.LocalDateTime;
 
@@ -18,4 +19,14 @@ public class GuestbookDTO {
     private String writer;
     private LocalDateTime regDate;
     private LocalDateTime modDate;
+
+    public Guestbook converToEntity() {
+        Guestbook entity = Guestbook.builder()
+                .gno(this.gno)
+                .title(this.title)
+                .content(this.content)
+                .writer(this.writer)
+                .build();
+        return entity;
+    }
 }
