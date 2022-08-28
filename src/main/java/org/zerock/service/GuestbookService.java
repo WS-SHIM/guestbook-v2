@@ -16,4 +16,5 @@ public interface GuestbookService {
         return entity;
     }
 
+    Long register2(GuestbookDTO guestbookDTO);
 }

@@ -12,4 +12,9 @@ public class GuestbookServiceByMybatisImpl implements GuestbookService {
     public Long register(GuestbookDTO dto) {
         return null;
     }
+
+    @Override
+    public Long register2(GuestbookDTO guestbookDTO) {
+        return null;
+    }
 }
