@@ -1,9 +1,11 @@
 package org.zerock.service;
 
 import lombok.extern.log4j.Log4j2;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import org.zerock.dto.GuestbookDTO;
 import org.zerock.entity.Guestbook;
+
 
 @Service
 @Log4j2
