@@ -31,13 +31,5 @@ public interface GuestbookService {
         return dto;
     }
 
-
-
-
-
-
-
-
-
     Long register2(GuestbookDTO guestbookDTO);
 }
