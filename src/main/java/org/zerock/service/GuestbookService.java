@@ -16,5 +16,25 @@ public interface GuestbookService {
         return entity;
     }
 
+    default GuestbookDTO entityToDto(Guestbook entity) {
+        GuestbookDTO dto = GuestbookDTO.builder()
+                .gno(entity.getGno())
+                .title(entity.getTitle())
+                .content(entity.getContent())
+                .writer(entity.getWriter())
+                .regDate(entity.getRegDate())
+                .modDate(entity.getModDate())
+                .build();
+        return dto;
+    }
+
+
+
+
+
+
+
+
+
     Long register2(GuestbookDTO guestbookDTO);
 }
