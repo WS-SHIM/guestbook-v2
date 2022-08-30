@@ -14,4 +14,7 @@ public class PageResultDTO<DTO, EN> {
     public PageResultDTO(Page<EN> result, Function<EN, DTO> fn) {
         dtoList = result.stream().map(fn).collect(Collectors.toList());
     }
+
+    // PageResultDTO 말고 다른 메서드를 활용해서 doList 만들어 보기!!!
+
 }
